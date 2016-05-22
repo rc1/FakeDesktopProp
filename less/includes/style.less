@@ -121,8 +121,68 @@ html, body {
 
     .outlook-message {
         position: absolute;
-        top: 206px;
+        top: 103px;
         left: 586px;
+
+        .outlook-message-header {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .outlook-message-header-icon {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40px; height: 40px;
+            background-color: #737373;
+            border-radius: 42px;
+            overflow: hidden;
+            h5 {
+                font-size: 18px;
+                color: white;
+                text-align: center;
+                margin-top: 10px;
+            }
+        }
+        .outlook-message-header-from {
+            position: absolute;
+            top: 2px;
+            left: 51px;
+            width: 200px;
+            font-size: 18px;
+        }
+        .outlook-message-header-time {
+            position: absolute;
+            top: 25px;
+            left: 51px;
+            color: grey;
+            font-size: 12px;
+            
+        }
+        .outlook-message-header-subject {
+            position: absolute;
+            font-size: 13px;
+            top: 55px;
+            left: 0;
+            font-weight: bold;
+            width: 400px;
+        }
+        .outlook-message-header-to {
+            position: absolute;
+            top: 73px;
+            font-size: 13px;
+            color: grey;
+            left: 0;
+            width: 400px;
+        }
+        
+        .outlook-message-body {
+            position: absolute;
+            top: 120px;
+            left: 0px;
+            width: 400px;
+        }
+        
     }
 
     .outlook-list {
