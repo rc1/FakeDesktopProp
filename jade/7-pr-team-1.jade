@@ -4,14 +4,14 @@ html
         title Pr Team 1
         meta( charset="UTF-8" )
         link( rel='stylesheet', type='text/css', href='all.css' )
-    body
-        .background( data-background, data-url='./kavital.png' )
+    body( style='background: url( "./background-pattern-2.jpg" )' )
 
-        .icons( data-icons, data-grid-x=96, data-grid-y=128+100 )
+        .icons( data-icons, data-grid-x=76, data-grid-y=76+40 )
             .icon(data-icon, data-url='./icon-recycle-bin.png', data-x=0, data-y=0, data-name='Recycle Bin' )
-            .icon(data-icon, data-url='./icon-pdf.png', data-x=0, data-y=1, data-name='Boarding Pass.pdf' )
+            .icon(data-icon, data-url='./icon-pdf.png', data-x=0, data-y=1, data-name='DRAFT Press Release.pdf' )
+            .icon(data-icon, data-url='./icon-pdf.png', data-x=0, data-y=3, data-name='Kavital Future.pdf' )
 
-        .outlook( data-outlook-config, data-messages-path='./messages/pr-team-1.txt', data-new-message-every-min=2000, data-new-message-every-max=20000 )
+        .outlook( style='left: 30px', data-outlook-config, data-messages-path='./messages/pr-team-1.txt', data-new-message-every-min=2000, data-new-message-every-max=20000 )
 
             .outlook-inbox-counter(data-inbox-counter) 2000
             .outlook-draft-counter 1
@@ -25,9 +25,25 @@ html
                 //-     h4 Time
 
             .outlook-message
-                p Hey Lori,
-                p This is your message that will be on the screen when you left
-                p Here it is with a link <a href="/">theworkers.net</a> 
+                .outlook-message-header
+                    .outlook-message-header-icon: h5 SL
+                    .outlook-message-header-from Sara Luhan
+                    .outlook-message-header-time 06:30
+                    .outlook-message-header-subject Please call John
+                    .outlook-message-header-to To: Lori
+                .outlook-message-body
+                    p Lori, you know I've been trying to reach you. So has John. 
+                    p The call last night. Really this does not conern you. 
+                        br 
+                        | People just get carried away.
+                    p
+                    p -----
+                        br
+                        | Dr Sara Luhan
+                        br
+                        | Stanford Precourt Institute for Energy 
+                        br
+                        a( href="/" ) energy.stanford.edu
         
         .bar
             .bar-apps
